@@ -1,12 +1,15 @@
 # leetcode-note
 
 **📚 LeetCode Solutions**
+
 A Record of My Problem Solving Journey
 
 **🎯 Continuous Updates**
+
 This repository will be regularly updated. If better solutions or new insights are discovered, they will be added to the relevant problem entries
 
 **💡 Open to discussions and suggestions!**
+
 This version keeps the structure clear and professional. Let me know if you want any modifications! 🚀
 
 ## References
