@@ -4,22 +4,22 @@ class Solution:
         n = len(nums)
         returnList = []
         for i, i_num in enumerate(nums):
-            if i and i_num == nums[i-1]:
+            if i and i_num == nums[i - 1]:
                 continue
-            l = i + 1
-            r = n - 1
-            while l < r:
-                sum = i_num + nums[l] + nums[r]
+            left = i + 1
+            right = n - 1
+            while left < right:
+                sum = i_num + nums[left] + nums[right]
                 if sum == 0:
-                    returnList.append([i_num, nums[l], nums[r]])
-                    while l < r and nums[l] == nums[l+1]:
-                        l += 1
-                    while l < r and nums[r] == nums[r-1]:
-                        r -= 1
-                    l += 1
-                    r -= 1
+                    returnList.append([i_num, nums[left], nums[right]])
+                    while left < right and nums[left] == nums[left + 1]:
+                        left += 1
+                    while left < right and nums[right] == nums[right - 1]:
+                        right -= 1
+                    left += 1
+                    right -= 1
                 elif sum < 0:
-                    l += 1
+                    left += 1
                 else:
-                    r -= 1
+                    right -= 1
         return returnList
